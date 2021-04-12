@@ -1,0 +1,234 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="UTF-8">
+
+    <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700|Varela+Round" rel="stylesheet">
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.css" type="text/css">
+    <link rel="stylesheet" href="assets/fonts/font-awesome.css" type="text/css">
+    <link rel="stylesheet" href="assets/css/style.css">
+
+
+	<title>Kitaplık - İletişim</title>
+
+</head>
+<body>
+    
+<script language="javascript">
+ 
+function uyari(){
+ 
+    alert("Mesajınız Gönderilmiştir.");
+ 
+}
+ 
+</script>
+    
+                <!--============ Menü =========================================================================-->
+    <div class="page sub-page">
+        <header class="hero">
+            <div class="hero-wrapper">
+
+                <div class="main-navigation">
+                    <div class="container">
+                        <nav class="navbar navbar-expand-lg navbar-light justify-content-between">
+                            <a class="navbar-brand" href="index.html">
+                                <img  width="250" height="100" src="assets/img/logo.jpg" alt="">
+                            </a>
+                            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
+                                <span class="navbar-toggler-icon"></span>
+                            </button>
+                            <div class="collapse navbar-collapse" id="navbar">
+                                
+                                <ul class="navbar-nav">
+                                    <li >
+                                        <a class="nav-link" href="anasayfa.html">Anasayfa</a>
+                                    </li>
+                                    <li >
+                                        <a class="nav-link" href="kitaplar.html">Kitaplar</a>
+                                    </li>
+                                    <li >
+                                        <a class="nav-item active" class="nav-link" href="iletisim.html">İletişim</a>
+                                    </li>
+                                </ul>
+
+                            </div>
+                        </nav>
+                    </div>
+                </div>
+
+                <!--============ Sayfa Başlığı =========================================================================-->
+                <div class="page-title">
+                    <div class="container">
+                        <h1>İletişim</h1>
+                    </div>
+                </div>
+                <!--====================================================================================================-->
+                <div class="background"></div>
+            </div>
+        </header>
+                <!--============== Menü Bitiş =======================================================================-->
+
+
+        <!--************ İLETİŞİM ************************************************************************************-->
+
+        <section class="content">
+            <section class="block">
+                
+                <!--============ Harita ========================================================================-->
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3047.881642331731!2d29.966945015658634!3d40.18944737939218!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14cc75e791df68d1%3A0x8152c406c8498209!2sBilecik%20%C5%9Eeyh%20Edebali%20%C3%9Cniversitesi!5e0!3m2!1str!2str!4v1617899886565!5m2!1str!2str" width="600" height="500" style="border:0;  margin-left: 10%; margin-right: 10%; width: 80%; margin-top: -100px;" allowfullscreen="" loading="lazy"></iframe>
+                <!--============ Harita Bitiş ==================================================================-->
+                
+                
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-4">
+                            <h2>İletişim Adresi</h2>
+                            <p>
+                                Bilecik Şeyh Edebali Üniversitesi(BŞEÜ) <br> İletişim Bilgileri
+                            </p>
+                            <br>
+                            <figure class="with-icon">
+                                <i class="fa fa-map-marker"></i>
+                                <span>Pelitözü Mah. Fatih Sultan Mehmet Bulvarı<br>No:27 11230 Merkez/BİLECİK</span>
+                            </figure>
+                            <br>
+                            <figure class="with-icon">
+                                <i class="fa fa-phone"></i>
+                                <span>0228 214 11 11</span>
+                            </figure>
+                            <figure class="with-icon">
+                                <i class="fa fa-envelope"></i>
+                                <a href="#">genelsekreterlik@bilecik.edu.tr</a>
+                            </figure>
+                            <figure class="with-icon">
+                                <i class="fa fa-envelope"></i>
+                                <a href="#">bilgiedinme@bilecik.edu.tr</a>
+                            </figure>
+                        </div>
+
+                        <div class="col-md-8">
+                            <h2>İletişim Formu</h2>
+                            <form class="form email" action="kaydet.php" id="form" name="form" method="POST" >
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <div class="form-group">
+                                            <label for="name" class="col-form-label required">Adınız</label>
+                                            <input name="adi" type="text" class="form-control" id="name" placeholder="Adınız" required>
+                                        </div>
+
+                                    </div>
+
+                                    <div class="col-md-6">
+                                        <div class="form-group">
+                                            <label for="email" class="col-form-label required">E-mail Adresiniz</label>
+                                            <input name="e_mail" type="email" class="form-control" id="email" placeholder="E-mail" required>
+                                        </div>
+
+                                    </div>
+
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="subject" class="col-form-label">Başlık</label>
+                                    <input name="baslik" type="text" class="form-control" id="subject" placeholder="Başlık">
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="message" class="col-form-label required">Mesajınız</label>
+                                    <textarea name="mesaj" id="message" class="form-control" rows="4" placeholder="Mesajınız" required></textarea>
+                                </div>
+
+                                <button type="submit" class="btn btn-primary float-right" onClick="uyari()">Gönder</button>
+                            </form>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+        </section>
+        
+        <!--************ İLETİŞİM SONU ******************************************************************************-->
+        
+        
+        <!--************ FOOTER *************************************************************************************-->
+<footer class="footer">
+            <div class="wrapper">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-5">
+                            <a href="#" class="brand">
+                                <img width="250" height="100" src="assets/img/logo.jpg" alt="">
+                            </a>
+                            <p>
+                               Okuma ihtiyacı barut gibidir, bir kere tutuşunca artık sönmez...<br>
+                                -Victor Hugo
+                            </p>
+                        </div>
+                        <!---->
+                        <div class="col-md-3">
+                            <h2>Menü</h2>
+                            <div class="row">
+                                <div class="col-md-6 col-sm-6">
+                                    <nav>
+                                        <ul class="list-unstyled">
+                                            <li>
+                                                <a href="anasayfa.html">Anasayfa</a>
+                                            </li>
+                                            <li>
+                                                <a href="kitaplar.html">Kitaplar</a>
+                                            </li>
+                                            <li>
+                                                <a href="iletisim.html">İletişim</a>
+                                            </li>
+
+                                        </ul>
+                                    </nav>
+                                </div>
+                            </div>
+                        </div>
+                        <!---->
+                        <div class="col-md-4">
+                            <h2>İletişim</h2>
+                            <address>
+                                <figure>
+                                    Pelitözü Mah. Fatih Sultan Mehmet Bulvarı<br>No:27 11230 Merkez/BİLECİK
+                                </figure>
+                                <br>
+                                <strong>Email:</strong> <a href="#">genelsekreterlik@bilecik.edu.tr</a>
+                                <br>
+                                <strong>Skype: </strong> kitaplik
+                                <br>
+                                <br>
+                                <a href="iletisim.html" class="btn btn-primary text-caps btn-framed">İLETİŞİME GEÇİN</a>
+                            </address>
+                        </div>
+                        <!---->
+                    </div>
+                    <!---->
+                </div>
+                <div class="background">
+                    <div class="background-image original-size">
+                        <img src="assets/img/footer-background-icons.jpg" alt="">
+                    </div>
+                    <!---->
+                </div>
+                <!---->
+            </div>
+        </footer>
+        <!--************ FOOTER SONU *************************************************************************************-->
+    </div>
+    <!--SAYFA SONU-->
+
+	<script src="assets/js/jquery-3.3.1.min.js"></script>
+	<script type="text/javascript" src="assets/bootstrap/js/bootstrap.min.js"></script>   
+	<script src="assets/js/selectize.min.js"></script>
+	<script src="assets/js/icheck.min.js"></script>
+	<script src="assets/js/custom.js"></script>
+
+</body>
+</html>
